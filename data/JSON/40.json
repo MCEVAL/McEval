@@ -1,0 +1,21 @@
+{
+    "id": "appConfig",
+    "isBase": true,
+    "name": "strings:#/appConfigDependencyTypeName",
+    "description": "strings:#/appConfigDependencyTypeDescription",
+    "isSingleton": true,
+    "connectionSettingPropertyDisplayName": "strings:#/connectionSettings",
+    "smallImage": {
+      "guid": "AE27A6B0-E345-4288-96DF-5EAF394EE369",
+      "id": 3925
+    },
+    "resizableImage": {
+      "guid": "AE27A6B0-E345-4288-96DF-5EAF394EE369",
+      "id": 3925
+    },
+    "displayOrder": 4500,
+    "actions": [],
+    "tags": [
+      "strings:#/store"
+    ]
+  }

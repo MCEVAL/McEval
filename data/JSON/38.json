@@ -1,0 +1,20 @@
+{
+    "router-view": {
+        "attributes": [
+            "name",
+            "route"
+        ],
+        "description": "A component that renders the matched component for the current location. Components rendered by <router-view> can also have their own <router-view>, allowing for the rendering of nested routes."
+    },
+    "router-link": {
+        "attributes": [
+            "to",
+            "replace",
+            "custom",
+            "active-class",
+            "exact-active-class",
+            "aria-current-value"
+        ],
+        "description": "Renders an <a> element with the correct href attribute. Has click listeners for local navigation. The custom prop and the v-slot API allow for customization of its rendering."
+    }
+}

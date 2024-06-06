@@ -1,0 +1,24 @@
+{
+    "components": {
+      "appServiceSettings": {
+        "modifiers": [
+          "appInsights.appServiceSettings"
+        ]
+      },
+      "appSettings": {
+        "modifiers": [
+          "appInsights.appSettings"
+        ]
+      },
+      "code": {
+        "modifiers": [
+          "appInsights.code.generic.startupCode"
+        ]
+      },
+      "nuget": {
+        "modifiers": [
+          "appInsights.nuget.coreweb"
+        ]
+      }
+    }
+  }

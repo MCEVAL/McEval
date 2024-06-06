@@ -1,0 +1,17 @@
+{
+	"es3": true,
+
+	"additionalRules": [],
+
+	"requireSemicolons": true,
+
+	"disallowMultipleSpaces": true,
+
+	"disallowIdentifierNames": [],
+
+	"requireCurlyBraces": {
+		"allExcept": [],
+		"keywords": ["if", "else", "for", "while", "do", "try", "catch"]
+	}
+}
+

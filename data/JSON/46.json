@@ -1,0 +1,44 @@
+{
+    "kind": "code.generic",
+    "confidence": "High",
+    "featureId": "appInsights",
+    "componentId": "code",
+    "model": {
+      "kind": "Generic",
+      "detectionLocations": [
+        {
+          "parts": [
+            {
+              "kind": "Method",
+              "properties": {
+                "Method": "ConfigureServices",
+                "TypeName": "Microsoft.Extensions.DependencyInjection.IServiceCollection"
+              }
+            },
+            {
+              "kind": "Invocation",
+              "properties": {
+                "Invocation": "AddApplicationInsightsTelemetry",
+                "TypeName": "Microsoft.Extensions.DependencyInjection.ApplicationInsightsExtensions"
+              }
+            }
+          ]
+        },
+        {
+          "parts": [
+            {
+              "kind": "TopLevelMethod",
+              "properties": {}
+            },
+            {
+              "kind": "Invocation",
+              "properties": {
+                "Invocation": "AddApplicationInsightsTelemetry",
+                "TypeName": "Microsoft.Extensions.DependencyInjection.ApplicationInsightsExtensions"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }

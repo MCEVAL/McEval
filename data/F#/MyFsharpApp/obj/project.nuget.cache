@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "3bhDJDyVfbO7QqtcQz7jK4pHWeNQ6HVEqLgAGetsv17pT7ZWbRAWhC5Z508/2Nw7idwTcQmufL1i1Mw1AQ6ofw==",
+  "success": true,
+  "projectFilePath": "/workspace/MMCodeEval/data/F#/MyFsharpApp/MyFsharpApp.fsproj",
+  "expectedPackageFiles": [
+    "/root/.nuget/packages/fsharp.core/8.0.100/fsharp.core.8.0.100.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,15 @@
+{
+    "appinfo": [
+        {
+            "depend_plugins": [
+            ],
+            "id": "26A31B5AD14C88931F106C99D14F4A7C",
+            "plugin_name": "kpromethirdapp"
+        },
+        {
+            "depend_plugins": [
+            ],
+            "id": "3kresumetemplate",
+            "plugin_name": "kdocerfeature"
+        }]
+}

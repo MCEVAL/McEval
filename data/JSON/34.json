@@ -1,0 +1,8 @@
+{
+    "named_entities": [
+        {
+            "name": "北京",
+            "type": "地点"
+        }
+    ]
+}

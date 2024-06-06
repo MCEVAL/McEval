@@ -1,0 +1,8 @@
+{
+    "and_ding_remind_type_app" : "应用内",
+    "and_ding_remind_type_sms" : "短信",
+    "and_modify_device_name" : "修改设备名称",
+    "and_network_no_connection" : "无网络连接,请连接网络后重试",
+    "and_search_user_not_exist_error" : "用户不存在",
+    "time.yesterday" : "昨天"
+}

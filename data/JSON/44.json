@@ -1,0 +1,11 @@
+{
+    "kind": "xmlelement.generic",
+    "restorable": true,
+    "order": 20,
+    "model": {
+      "filePath": "ApplicationInsights.config",
+      "key": "ConnectionString",
+      "namespace": "http://schemas.microsoft.com/ApplicationInsights/2013/Settings",
+      "body": "@@connectionString@@"
+    }
+  }

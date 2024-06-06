@@ -1,0 +1,19 @@
+{
+    "includes": {},
+    "macros": {
+      "appendixpage": {},
+      "setthesubsection": {}
+    },
+    "envs": {
+      "appendices": {},
+      "subappendices": {}
+    },
+    "options": [
+      "toc",
+      "title",
+      "titletoc",
+      "header",
+      "page"
+    ],
+    "keyvals": []
+  }

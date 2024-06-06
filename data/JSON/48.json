@@ -1,0 +1,28 @@
+{
+    "JsonSuccessfullyWritten" : true,
+    "JsonVersion" : 4,
+    "JsonCreationTime" : "133529054054639386",
+    "CompatSectionCount" : 1,
+    "CompatSections" : 
+    [
+        {
+            "SectionMsg" : 
+            {
+                "MsgId" : 13,
+                "MsgDescription" : "DEBUG: Machine Attributes"
+            },
+            "Assets" : 
+            [
+                {
+                    "AssetImgPath" : "C:\\WINDOWS\\appcompat\\UA\\GenericApp.png",
+                    "Translatable" : true,
+                    "AssetMajorResourceMsgId" : 
+                    {
+                        "MsgId" : 119,
+                        "MsgDescription" : "DEBUG: Touch, Capable"
+                    }
+                }
+            ]
+        }
+    ]
+}

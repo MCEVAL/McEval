@@ -1,0 +1,40 @@
+{
+    "requirements": [
+      "vsWebWorkload"
+    ],
+    "editSteps": [
+      "PickInstanceCompute"
+    ],
+    "properties": {
+      "group": {
+        "value": "connections"
+      }
+    },
+    "persistencePreprocessors": [
+      "RemoteEntityCompute"
+    ],
+    "persistenceProperties": {
+      "connectionId": {
+        "isBase": true
+      },
+      "dynamicId": {
+        "isBase": true
+      },
+      "ignored": {
+        "isBase": true
+      },
+      "resourceId": {
+        "parametrizer": "resourceId"
+      },
+      "secretStore": {},
+      "suggestion": {
+        "isBase": true
+      },
+      "type": {
+        "isBase": true
+      },
+      "group": {
+        "isBase": true
+      }
+    }
+  }

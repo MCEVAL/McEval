@@ -1,0 +1,38 @@
+[
+    {
+       "app_data" : "",
+       "c_name" : "好友",
+       "data_name" : "好友",
+       "desc" : "社交，聊天",
+       "enable_update" : "0",
+       "icon" : "https://wegame.gtimg.com/tgp/oss-images/oss_5976ac9b38b82.png",
+       "id" : "10002",
+       "item_id" : "1",
+       "item_update_time" : "2017-07-25 10:27:47",
+       "name" : "chat",
+       "new_feature_hint_time" : {
+          "end_time" : "",
+          "start_time" : ""
+       },
+       "scope" : [],
+       "type" : "0"
+    },
+    {
+       "app_data" : "",
+       "c_name" : "百科",
+       "data_name" : "百科",
+       "desc" : "游戏百科",
+       "enable_update" : "0",
+       "icon" : "https://wegame.gtimg.com/tgp/oss-images/oss_5976ad49b0429.png",
+       "id" : "10003",
+       "item_id" : "2",
+       "item_update_time" : "2017-07-25 10:30:46",
+       "name" : "game_wiki",
+       "new_feature_hint_time" : {
+          "end_time" : "",
+          "start_time" : ""
+       },
+       "scope" : [],
+       "type" : "0"
+    }]
+    

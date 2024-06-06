@@ -1,0 +1,12 @@
+{
+    "sites": [
+        {
+            "name": "Google",
+            "url": "www.google.com"
+        },
+        {
+            "name": "Weibo",
+            "url": "www.weibo.com"
+        }
+    ]
+}

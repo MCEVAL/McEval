@@ -1,0 +1,19 @@
+{
+    "billTo": {
+        "zip": "12345",
+        "city": "Pretendville",
+        "name": "John Smith",
+        "state": "NY",
+        "address": "123 Maple Street"
+    },
+    "shipTo": {
+        "zip": "12345",
+        "city": "Pretendville",
+        "name": "Jane Smith",
+        "state": "NY",
+        "address": "123 Maple Street"
+    },
+    "sku": "20223",
+    "name": "John Smith",
+    "price": 23.95
+}
