@@ -1,0 +1,80 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataBiases": "cr:dataBiases",
+    "dataCollection": "cr:dataCollection",
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "personalSensitiveInformation": "cr:personalSensitiveInformation",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "repo",
+      "name": "repo",
+      "description": "The Hugging Face git repository.",
+      "contentUrl": "https://huggingface.co/datasets/Multilingual-Multimodal-NLP/McEval/tree/refs%2Fconvert%2Fparquet",
+      "encodingFormat": "git+https",
+      "sha256": "https://github.com/mlcommons/croissant/issues/80"
+    }
+  ],
+  "recordSet": [],
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "name": "McEval",
+  "description": "McEval benchmark data as described in the McEval Paper. Code for the evaluation can be found on Github as McEval.\n",
+  "alternateName": [
+    "Multilingual-Multimodal-NLP/McEval"
+  ],
+  "creator": {
+    "@type": "Organization",
+    "name": "Multilingual-Multimodal-NLP",
+    "url": "https://huggingface.co/Multilingual-Multimodal-NLP"
+  },
+  "keywords": [
+    "text-generation",
+    "fill-mask",
+    "summarization",
+    "English",
+    "cc-by-sa-4.0",
+    "Croissant",
+    "arxiv:2406.07436"
+  ],
+  "license": "https://choosealicense.com/licenses/cc-by-sa-4.0/",
+  "url": "https://huggingface.co/datasets/Multilingual-Multimodal-NLP/McEval"
+}

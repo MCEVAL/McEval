@@ -1,0 +1,158 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataBiases": "cr:dataBiases",
+    "dataCollection": "cr:dataCollection",
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "personalSensitiveInformation": "cr:personalSensitiveInformation",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "repo",
+      "name": "repo",
+      "description": "The Hugging Face git repository.",
+      "contentUrl": "https://huggingface.co/datasets/Multilingual-Multimodal-NLP/McEval-Instruct/tree/refs%2Fconvert%2Fparquet",
+      "encodingFormat": "git+https",
+      "sha256": "https://github.com/mlcommons/croissant/issues/80"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "parquet-files-for-config-default",
+      "name": "parquet-files-for-config-default",
+      "description": "The underlying Parquet files as converted by Hugging Face (see: https://huggingface.co/docs/datasets-server/parquet).",
+      "containedIn": {
+        "@id": "repo"
+      },
+      "encodingFormat": "application/x-parquet",
+      "includes": "default/*/*.parquet"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "default",
+      "name": "default",
+      "description": "Multilingual-Multimodal-NLP/McEval-Instruct - 'default' subset",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "default/language",
+          "name": "default/language",
+          "description": "Column 'language' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-default"
+            },
+            "extract": {
+              "column": "language"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "default/instruction",
+          "name": "default/instruction",
+          "description": "Column 'instruction' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-default"
+            },
+            "extract": {
+              "column": "instruction"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "default/source",
+          "name": "default/source",
+          "description": "Column 'source' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-default"
+            },
+            "extract": {
+              "column": "source"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "default/output",
+          "name": "default/output",
+          "description": "Column 'output' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-default"
+            },
+            "extract": {
+              "column": "output"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "name": "McEval-Instruct",
+  "description": "McEval-Instruct data as described in the McEval Paper. Code for the evaluation and sft can be found on Github as McEval.\n",
+  "alternateName": [
+    "Multilingual-Multimodal-NLP/McEval-Instruct"
+  ],
+  "creator": {
+    "@type": "Organization",
+    "name": "Multilingual-Multimodal-NLP",
+    "url": "https://huggingface.co/Multilingual-Multimodal-NLP"
+  },
+  "keywords": [
+    "text-generation",
+    "English",
+    "cc-by-sa-4.0",
+    "Croissant",
+    "arxiv:2406.07436"
+  ],
+  "license": "https://choosealicense.com/licenses/cc-by-sa-4.0/",
+  "url": "https://huggingface.co/datasets/Multilingual-Multimodal-NLP/McEval-Instruct"
+}
