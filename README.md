@@ -11,7 +11,7 @@
 
 <div align="center" style="line-height: 1;">
   <a href="" style="margin: 2px;">
-    <img alt="Code License" src="https://img.shields.io/badge/Code_License-MIT-f5de53%3F" style="display: inline-block; vertical-align: middle;"/>
+    <img alt="Code License" src="https://img.shields.io/badge/Code_License-MIT-f5de53%3F?color=green" style="display: inline-block; vertical-align: middle;"/>
   </a>
   <a href="" style="margin: 2px;">
     <img alt="Data License" src="https://img.shields.io/badge/Data_License-CC--BY--SA--4.0-f5de53%3F?color=blue" style="display: inline-block; vertical-align: middle;"/>
@@ -97,11 +97,17 @@ Runtime environments for different programming languages could be found in [Envi
 
 We recommend using Docker for evaluation, we have created a Docker image with all the necessary environments pre-installed.
 
-Docker images will be released soon.
-<!-- Directly pull the image from Docker Hub:
-```bash 
+<!-- Docker images will be released soon. -->
+Directly pull the image from Docker Hub:
 
-``` -->
+
+
+```bash 
+# Aliyun docker hub:
+docker pull registry.cn-hangzhou.aliyuncs.com/mceval/mceval:v1
+docker run -it -d --restart=always --name mceval_dev --workdir  / registry.cn-hangzhou.aliyuncs.com/mceval/mceval:v1  /bin/bash
+docker attach mceval_dev
+``` 
 
 
 ### Inference
@@ -130,7 +136,6 @@ bash scripts/eval_generation.sh
 
 ## Mcoder
 We have open-sourced the code for [Mcoder](Mcoder/) training, including [CodeQwen1.5](https://github.com/QwenLM/CodeQwen1.5) and [DeepSeek-Coder](https://github.com/deepseek-ai/deepseek-coder) as base models.
-
 
 
 We will make the model weights of Mcoder available for download soon.
