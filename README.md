@@ -98,14 +98,17 @@ Runtime environments for different programming languages could be found in [Envi
 We recommend using Docker for evaluation, we have created a Docker image with all the necessary environments pre-installed.
 
 <!-- Docker images will be released soon. -->
-Directly pull the image from Docker Hub:
-
+Directly pull the image from Docker Hub or Aliyun Docker Hub:
 
 
 ```bash 
+# Docker hub:
+docker pull multilingualnlp/mceval
+
 # Aliyun docker hub:
 docker pull registry.cn-hangzhou.aliyuncs.com/mceval/mceval:v1
-docker run -it -d --restart=always --name mceval_dev --workdir  / registry.cn-hangzhou.aliyuncs.com/mceval/mceval:v1  /bin/bash
+
+docker run -it -d --restart=always --name mceval_dev --workdir  / <image-name>  /bin/bash
 docker attach mceval_dev
 ``` 
 
