@@ -154,7 +154,13 @@ This code repository is licensed under the [the MIT License](LICENSE-CODE). The 
 If you find our work helpful, please use the following citations.
 <!-- 
 ```
-
+@article{mceval,
+  title={McEval: Massively Multilingual Code Evaluation},
+  author={Chai, Linzheng and Liu, Shukai and Yang, Jian and Yin, Yuwei and Jin, Ke and Liu, Jiaheng and Sun, Tao and Zhang, Ge and Ren, Changyu and Guo, Hongcheng and others},
+  journal={arXiv e-prints},
+  pages={arXiv--2406},
+  year={2024}
+}
 ``` -->
 
 
