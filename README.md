@@ -83,7 +83,7 @@ Refer to our <a href="https://mceval.github.io/leaderboard.html">🏆 Leaderboar
 | **Dataset** |  **Download** |
 | :------------: | :------------: |
 | McEval Evaluation Dataset  | [🤗 HuggingFace](https://huggingface.co/datasets/Multilingual-Multimodal-NLP/McEval)   |
-| McEval-Instruct  | [🤗 HuggingFace](https://huggingface.co/datasets/Multilingual-Multimodal-NLP/McEval-Instruct)   |
+| McEval-Instruct  | [🤗 HuggingFace](https://huggingface.co/datasets/Multilingual-Multimodal-NLP/McEval-Instruct)    |
 
 </div>
 
@@ -112,7 +112,6 @@ docker run -it -d --restart=always --name mceval_dev --workdir  / <image-name>  
 docker attach mceval_dev
 ``` 
 
-
 ### Inference
 We provide some model inference codes, including torch and vllm implementations.
 
@@ -131,6 +130,44 @@ bash scripts/run_generation_vllm.sh
 ```
 
 ### Evaluation
+
+#### Data Format 
+**🛎️ Please prepare the inference results of the model in the following format and use them for the next evaluation step.**
+
+(1) Folder Structure
+Place the data in the following folder structure, each file corresponds to the test results of each language. 
+```bash 
+\evaluate_model_name 
+  - CPP.jsonl
+  - Python.jsonl
+  - Java.jsonl
+  ...
+```
+You can use script [split_result.py](inference/split_result.py) to split inference results. 
+```bash 
+python split_result --split_file <inference_result> --save_dir <save_dir>
+```
+
+(2) File Format 
+Each line in the file for each test language has the following format.
+The *raw_generation* field is the generated code.
+More examples can be found in [Evualute Data Format Examples](examples/evaluate/)
+```bash 
+{
+    "task_id": "Lang/1",
+    "prompt": "",
+    "canonical_solution": "",
+    "test": "",
+    "entry_point": "",
+    "signature": "",
+    "docstring": "",
+    "instruction": "",
+    "raw_generation": ["<Generated Code>"]
+}
+```
+
+
+#### Evaluate Generation Task
 Take the evaluation generation task as an example.
 ```bash
 cd eval 
@@ -139,7 +176,6 @@ bash scripts/eval_generation.sh
 
 ## Mcoder
 We have open-sourced the code for [Mcoder](Mcoder/) training, including [CodeQwen1.5](https://github.com/QwenLM/CodeQwen1.5) and [DeepSeek-Coder](https://github.com/deepseek-ai/deepseek-coder) as base models.
-
 
 We will make the model weights of Mcoder available for download soon.
 
