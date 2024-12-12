@@ -21,11 +21,11 @@ def extract_swift_code(text, item) -> str:
         # print("right!!!!")
         code = code_block.group(1)
     
-    pattern = r"func\s+check\w*\s*\(.*?\)\s*\{.*\}"
-    code = re.sub(pattern, "", code, flags=re.DOTALL)
+    # pattern = r"func\s+check\w*\s*\(.*?\)\s*\{.*\}"
+    # code = re.sub(pattern, "", code, flags=re.DOTALL)
 
-    pattern = r"\s+check\w*\s*\(.*?\)"
-    code = re.sub(pattern, "", code, flags=re.DOTALL)
+    # pattern = r"\s+check\w*\s*\(.*?\)"
+    # code = re.sub(pattern, "", code, flags=re.DOTALL)
 
     return code + '\n\n'+item['test']
 
