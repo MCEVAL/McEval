@@ -8,7 +8,7 @@ COMPLETE_DATA_PATH='<complete data>'
 
 MODEL_DIR='<model dir>'
 OUT_DIR='<output dir>'
-torchrun --nproc_per_node 8 --master_port 7834 generate.py \
+torchrun --nproc_per_node 8 --master_port 7834 inference_torch.py \
                         --base_model $MODEL_DIR \
                         --data_path $COMPLETE_DATA_PATH \
                         --out_path $OUT_DIR \
